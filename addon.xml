@@ -1,0 +1,25 @@
+<?xml version="0.0" encoding="UTF-8"?>
+<addon id="plugin.video.example"
+version="3.0.0"
+name="[COLOR blue]Americanflix[/COLOR]"
+provider-name="Nirk">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en_GB">addon oficial do Americanflix</summary>
+  <description lang="en_GB">todos os conteudos disponibilizados através desse addon são de terceiros, americanflix não hospeda nenhum conteudo em seu servidor, esse addon é apenas um agregador de links assim como o google</description>
+  <disclaimer lang="en_GB">todos os direitos reservado americanflix 2025</disclaimer>
+  <license>GPL-3.0-only	</license>
+  <assets>
+    <icon>resources/images/icon.png</icon>
+    <fanart>resources/images/fanart.jpg</fanart>
+    <screenshot>resources/images/screenshot-1.jpg</screenshot>
+    <screenshot>resources/images/screenshot-2.jpg</screenshot>
+  </assets>
+  <news>todos os direitos reservados a Americanflix oficial</news>
+</extension>
+</addon>
