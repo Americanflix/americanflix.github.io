@@ -1,5 +1,4 @@
-
-# Copyright (C) 2023, Roman V. M.
+# Copyright (C) 2025, Nirk.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -34,113 +33,186 @@ ADDON_PATH = translatePath(Addon().getAddonInfo('path'))
 ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons')
 FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
 
-# Public domain movies are from https://publicdomainmovie.net
+# instalador de pacotes do americanflix
 # Here we use a hardcoded list of movies simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some website or online service.
 VIDEOS = [
     {
-        'genre': '[B][COLOR blue]popular[/COLOR][/B]',
-        'icon': os.path.join(ICONS_DIR, 'Drama.png'),
-        'fanart': os.path.join(FANART_DIR, 'Drama.jpg'),
+        'genre': '[B][COLOR blue]informações[/COLOR][/B]',
+        'icon':
+'https://i.postimg.cc/85Fd6zvY/unnamed.png',
+        'fanart':
+'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
         'movies': [
             {
-                'title': 'Sonic 3: O Filme',
-                'url': 'https://dhruvmirrorpremium0-7e7c9edcf614.herokuapp.com/455184/Sonic.the.Hedgehog.3.2024.1080p.HDRip.Dublado.mkv.mkv?hash=AgADHA',
-                'poster': 'https://media.themoviedb.org/t/p/w220_and_h330_face/8HzA55GCjRTEC2YhPGna8Lc8qHo.jpg',
-                'plot': '[COLOR gold]AVISO[/COLOR] O video contem propaganda de terceiros, assim que eu conseguir uma versão sem anúncio, irei atualizar. Sonic, Knuckles e Tails se reúnem contra um novo e poderoso adversário, Shadow, um vilão misterioso com poderes diferentes de tudo que eles já enfrentaram antes. Com suas habilidades superadas em todos os sentidos, a Equipe Sonic deve buscar uma aliança improvável na esperança de parar Shadow e proteger o planeta. ',
-                'year': 2024,
+
+ 'title': '[B][COLOR gold]==Download==[/COLOR][/B]',
+'fanart':
+'https://i.postimg.cc/jq3kGp8Z/IMG-20250120-102354-711.jpg',
+                'url': '#',
+                'poster': 'https://v2.nachtalb.io/ris/f/AgAD3EEAAqyX8Eg.png',
+                'plot': '[B][COLOR gold]Faça Download/Baixar do nossos addon oficial do[/COLOR][/B][B][COLOR blue] americanflix addon oficial[/COLOR][/B][B][COLOR gold] basta você escanear o QR code, apontando a camera do seu celular para a TV, caso você esteja usando um aparelho mobile basta você tirar print da dela, e abrir a imagem com seu leitor de QR code, e pronto!, seja feliz [/COLOR][/B]',
+                'year': 2025,
             },
             {
-                'title': 'The Iron Mask',
-                'url': 'https://ia600702.us.archive.org/3/items/iron_mask/iron_mask_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=Ironmaskposter.jpg',
-                'plot': 'The Iron Mask is a 1929 American part-talkie adventure film directed by Allan Dwan. '
-                          'It is an adaptation of the last section of the novel The Vicomte de Bragelonne by '
-                          'Alexandre Dumas, père, which is itself based on the French legend of The Man in the Iron Mask.',
-                'year': 1929,
-            },
-            {
-                'title': 'Meet John Doe',
-                'url': 'https://ia804707.us.archive.org/30/items/meet_john_doe_ipod/video_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=Poster_-_Meet_John_Doe_01.jpg',
-                'plot': 'Meet John Doe is a 1941 in film United States comedy film drama film film directed and produced '
-                        'by Frank Capra, and starring Gary Cooper and Barbara Stanwyck. The film is about a "grassroots" '
-                        'political campaign created unwittingly by a newspaper columnist and pursued by a wealthy businessman.',
-                'year': 1941,
+                'title': '[B][COLOR blue]AMERICANFLIX[/COLOR][/B]',
+                'url': '#',
+                'poster': 'https://i.postimg.cc/LXjVqfHC/americanflix.jpg',
+                'plot': '[B][COLOR white]o Americanflix esta no kodi agora, venha aproveitar a nossa variedade de conteudo, abaixo você pode abaixar nosso addon logo abaixo, leia com atenção e aproveite☺️[/COLOR][/B]',
+                'year': 2025,
             },
         ],
     },
-    {
-        'genre': 'Horror',
-        'icon': os.path.join(ICONS_DIR, 'Horror.png'),
-        'fanart': os.path.join(FANART_DIR, 'Horror.jpg'),
+{
+        'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/gi6xUdJgh2OyF4yM7YAGGwKgKYS.jpg',
+        'fanart':
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfizEm2AYtODpwndpqiLsszdfmI4ifrqA7IQ&usqp=CAU',
         'movies': [
             {
-                'title': 'House on Haunted Hill',
-                'url': 'https://ia800203.us.archive.org/18/items/house_on_haunted_hill_ipod/house_on_haunted_hill_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=House_on_Haunted_Hill.jpg',
-                'plot': 'Eccentric millionaire Frederick Loren (Vincent Price) invites five people to a "party" '
-                        'he is throwing for his fourth wife, Annabelle (Carol Ohmart), '
-                        'in an allegedly haunted house he has rented, promising to give them each $10,000 '
-                        'with the stipulation that they must stay the entire night in the house after '
-                        'the doors are locked at midnight.',
-                'year': 1959,
-            },
-            {
-                'title': 'Carnival of Souls',
-                'url': 'https://ia600301.us.archive.org/8/items/CarnivalofSouls/CarnivalOfSouls_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=Carnival_of_Souls_%25281962_pressbook_cover%2529.jpg',
-                'plot': 'Carnival of Souls is a 1962 Independent film horror film starring Candace Hilligoss. Produced and directed by Herk Harvey '
-                        'for an estimated $33,000, the film did not gain widespread attention when originally released, '
-                        'as a B-movie; today, however, it is a cult classic.',
-                'year': 1962,
-            },
-            {
-                'title': 'The Screaming Skull',
-                'url': 'https://ia801603.us.archive.org/10/items/TheScreamingSkull/TheScreamingSkull.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=Poster_for_The_Screaming_Skull.jpg',
-                'plot': 'A widower remarries and the couple move into the house he shared with his previous wife. '
-                        'Only the ghost of the last wife might still be hanging around.',
-                'year': 1958,
+
+ 'title': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
+'fanart':
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfizEm2AYtODpwndpqiLsszdfmI4ifrqA7IQ&usqp=CAU',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/152457/O+Truque+do+Amor+2025+%28DUBLADO%29.mp4?hash=AgADmQ',
+                'poster': 'https://image.tmdb.org/t/p/w342/gi6xUdJgh2OyF4yM7YAGGwKgKYS.jpg',
+                'plot': 'Em O Truque do Amor, dois irmãos, Vito (Antonio Folletto) e Antonello (Vincenzo Nemolato), enfrentam uma crise financeira que ameaça arrancar eles da linda e amada casa onde vivem em Nápoles. Desesperados, eles criam um plano audacioso: enganar Marina (Laura Adriani), uma rica herdeira solitária, fingindo ser fundadores de uma instituição de caridade. Vito, um pai solteiro que já superou muitos desafios, assume o papel principal na farsa. No entanto, à medida que ele se aproxima de Marina, descobre sua profunda infelicidade e solidão. O coração de Vito começa a vacilar, e o engano se transforma em uma autêntica história de amor. Enquanto Vito e Marina se aproximam, Antonello se torna cada vez mais ansioso para receber o dinheiro. A pressão aumenta, e Vito precisa escolher entre salvar sua família ou seguir seu coração.',
+                'year': 2025,
+            
             },
         ],
     },
-    {
-        'genre': 'Comedy',
-        'icon': os.path.join(ICONS_DIR, 'Comedy.png'),
-        'fanart': os.path.join(FANART_DIR, 'Comedy.jpg'),
+{
+        'genre': '[B][COLOR gold]O Homem que Quer Viver para Sempre[/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/s6mdvaGWxdfLb23wWBO1gHdnMdG.jpg',
+        'fanart':
+'https://media-manager.noticiasaominuto.com/640/naom_677bb0e286564.webp?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoxMjU2LCJjcm9wSGVpZ2h0Ijo3MDcsImNyb3BYIjo0LCJjcm9wWSI6Nn0sInBvcnRyYWl0Ijp7ImNyb3BXaWR0aCI6Mzk5LCJjcm9wSGVpZ2h0Ijo3MDksImNyb3BYIjo0NDEsImNyb3BZIjo1fX0=',
         'movies': [
             {
-                'title': 'Charlie Chaplin\'s "The Vagabond"',
-                'url': 'https://ia904601.us.archive.org/16/items/CC_1916_07_10_TheVagabond/CC_1916_07_10_TheVagabond.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=The_Vagabond_%25281916%2529.jpg',
-                'plot': 'Charlie Chaplins 53rd Film Released July 10 1916 The Vagabond was a silent '
-                        'film by Charlie Chaplin and his third film with Mutual Films. Released in 1916, '
-                        'it co-starred Edna Purviance, Eric Campbell, Leo White and Lloyd Bacon. '
-                        'This film echoed Chaplin\'s work on The Tramp, with more drama mixed in with comedy.',
-                'year': 1916,
-            },
-            {
-                'title': 'Sing A Song of Six Pants',
-                'url': 'https://ia601508.us.archive.org/26/items/sing_a_song_of_six_pants/sing_a_song_of_six_pants_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=SingSong6PantsOneSheet47.JPG',
-                'plot': 'The Three Stooges (Moe, Larry, Shemp) are tailors and are heavily in debt. '
-                        'Could a big reward for the capture of a fugitive bank robber answer their financial prayers?',
-                'year': 1947,
-            },
-            {
-                'title': 'Steamboat Bill, Jr.',
-                'url': 'https://ia904501.us.archive.org/32/items/SteamboatBillJr/Steamboat_Bill.Jr_512kb.mp4',
-                'poster': 'https://publicdomainmovie.net/wikimedia.php?id=Steamboat_bill_poster.jpg',
-                'plot': 'Steamboat Bill, Jr. is the story of a naive, college-educated dandy who must prove himself '
-                        'to his working-class father, a hot-headed riverboat captain, while courting the daughter of '
-                        'his father\'s rival, who threatens to put Steamboat Bill, Sr. '
-                        'and his paddle-wheeler out of business.',
-                'year': 1928,
+
+ 'title': '[B][COLOR gold]O Homem que Quer Viver para Sempre[/COLOR][/B]',
+'fanart':
+'https://media-manager.noticiasaominuto.com/640/naom_677bb0e286564.webp?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoxMjU2LCJjcm9wSGVpZ2h0Ijo3MDcsImNyb3BYIjo0LCJjcm9wWSI6Nn0sInBvcnRyYWl0Ijp7ImNyb3BXaWR0aCI6Mzk5LCJjcm9wSGVpZ2h0Ijo3MDksImNyb3BYIjo0NDEsImNyb3BZIjo1fX0=',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/152459/O+Homem+que+Quer+Viver+para+Sempre+2025+%28DUBLADO%29.mp4?hash=AgADmw',
+                'poster': 'https://image.tmdb.org/t/p/w342/s6mdvaGWxdfLb23wWBO1gHdnMdG.jpg',
+                'plot': 'Em O Homem Que Quer Viver Para Sempre, Bryan Johnson é um influenciador da longevidade que está disposto a investir sua fortuna em tecnologias para retardar seu envelhecimento. Neste tocante documentário, acompanhamos a história desse excêntrico milionário em sua obsessiva busca pela juventude eterna. Desafiando os limites da biologia, Bryan coloca seu corpo e seu dinheiro à mercê da tecnologia, explorando os caminhos extremos que ele percorre para tentar alcançar a imortalidade. O documentário revela até onde um homem está disposto a ir para desafiar o processo natural do envelhecimento e tentar conquistar o impossível.',
+                'year': 2025,
+            
             },
         ],
     },
+{
+        'genre': '[B][COLOR gold]Umjolo: Entre Dois Amores[/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/m1aZxghCHlQK07xymiqs1C4YdqC.jpg',
+        'fanart':
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMss4aAscdWs5frbC0i4ytYTVXBzac0rme36LINAWkWr5pOfacJ9Q6H3aN&s=10',
+        'movies': [
+            {
+
+ 'title': '[B][COLOR gold]Umjolo: Entre Dois Amores[/COLOR][/B]',
+'fanart':
+'',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/152465/Umjolo+Entre+Dois+Amores.mp4?hash=AgADlA',
+                'poster': 'https://image.tmdb.org/t/p/w342/m1aZxghCHlQK07xymiqs1C4YdqC.jpg',
+                'plot': 'Quem mais está escondendo segredos de Sizwe? Entre romances avassaladores e uma gravidez inesperada, a vida dele está cheia de reviravoltas.',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#exemplo de codigo para não dar mais erros
+
+{
+        'genre': '[B][COLOR gold] Missão Porto Seguro[/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/dcoc4C57lCpAzBr2qojFjRCKO9E.jpg',
+        'fanart':
+'https://m.media-amazon.com/images/S/pv-target-images/3a3a515e3c5db3e744cb4a5e9d9269dee100d1ef0be5ceebd1e6f99dc9ce6311._SX1080_FMjpg_.jpg',
+        'movies': [
+            {
+
+ 'title': '[B][COLOR gold] Missão Porto Seguro[/COLOR][/B]',
+'fanart':
+'',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/153218/Miss%C3%A3o+Porto+Seguro+2025+%28NACIONAL%29.mp4?hash=AgADww',
+                'poster': 'https://image.tmdb.org/t/p/w342/dcoc4C57lCpAzBr2qojFjRCKO9E.jpg',
+                'plot': 'Em Missão Porto Seguro, a policial Denise (Giovanna Lancellotti) precisa se enfiar no meio de uma viagem de formatura de alunos do terceiro ano do ensino médio para Porto Seguro, com a finalidade de obter informações que possam ajudá-la a desarmar e prender uma organização criminosa. Para concluir a sua missão dentro do prazo, a policial contará com ajuda da jovem Babi (Ademara) e de mais quatro adolescentes que estão ali na viagem em busca de curtição e aventura (Sophia Valverde, Igor Jansen, Letícia Pedro e Raphael Vicente). Essa equipe colocará a policial em situações cômicas e atrapalhas, como um concurso de dança com a Sheila Mello e a Sheila Carvalho. Além de concluir essa missão inteiramente perigosa e desafiadora, Denise terá que concluir uma outra tarefa ainda mais difícil de lidar, uma vez que envolve questões emocionais. Ela precisa da aprovação do seu delegado, que também é seu chefe e seu pai (Miguel Falabella).',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#fim do exemplo
+#inicio
+{
+        'genre': '[B][COLOR gold] Ad Vitam [/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/dOpSxmD3FWfl6SK8SLXw9uwcO05.jpg',
+        'fanart':
+'https://64.media.tumblr.com/e747b8b201fc21bb15274397f8f42660/4f49947540f6477c-61/s1280x1920/753b0a41f64c10b08eb130c224b2c86610b86b57.jpg',
+        'movies': [
+            {
+
+ 'title': '[B][COLOR gold] Ad Vitam [/COLOR][/B]',
+'fanart':
+'',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/153220/Ad+Vitam+2025+%28DUBLADO%29.mp4?hash=AgADqg',
+                'poster': 'https://image.tmdb.org/t/p/w342/dOpSxmD3FWfl6SK8SLXw9uwcO05.jpg',
+                'plot': 'O passado volta para assombrar um homem nesse drama de ação. Ad Vitam acompanha Franck (Guillaume Canet) numa missão para salvar a vida de sua esposa grávida após a mulher ser sequestrada por um grupo criminoso misterioso. Encontrar Léo e entregar o que os bandidos querem fará Franck reviver seu tempo como integrante de um grupo de elite chamado GIGN. No meio de uma trama política complexa e correndo contra o tempo, Franck precisa reunir suas habilidades para desvendar um escândalo que se conecta ao seu turbulento passado; uma conspiração que pode estar fora do seu controle e o obriga a confrontar forças que achou ter deixado para trás. Ad Vitam é um suspense de ação repleto de caçadas perigosas e de tirar o fôlego.',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#fim
+#começo
+{
+        'genre': '[B][COLOR gold] September 5[/COLOR][/B]',
+        'icon':
+'https://image.tmdb.org/t/p/w342/3emldMXl1Q3p5yFUOZmBtuEn65C.jpg',
+        'fanart':
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1iqgy1PNUUsp6E2lRRZt4XBCeJ1y2FXWMg&usqp=CAU',
+        'movies': [
+            {
+
+ 'title': '[B][COLOR gold] September 5[/COLOR][/B]',
+'fanart':
+'',
+                'url': 'https://dhruvmirrorpremium1-5155281d9a96.herokuapp.com/153228/September.5.2024.720p.CAMRip.Dublado.mkv?hash=AgADXh',
+                'poster': 'https://image.tmdb.org/t/p/w342/3emldMXl1Q3p5yFUOZmBtuEn65C.jpg',
+                'plot': 'Em September 5, uma equipe de jornalistas esportivos precisa mudar sua cobertura radicalmente quando atletas são feitos de reféns dentro da Vila Olímpica. O drama histórico conta a história do Massacre de Munique, atentado que aconteceu nos Jogos Olímpicos de Verão de 1972 na Alemanha, a partir do ponto de vista da equipe de transmissão da ABC Sports. Na noite de 5 de setembro de 1972, um grupo terrorista chamado Setembro Negro invadiu a Vila Olímpica e fez 11 atletas da delegação israelense de reféns. Então, os jornalistas esportivos que estavam cobrindo o evento tiveram que mudar radicalmente a pauta para noticiar ao vivo o que estava acontecendo durante o sequestro que viria a se tornar o maior atentado terrorista a acontecer em um evento esportivo até hoje.',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#fim
+#começo
+{
+        'genre': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+        'icon':
+'link-da-capa.jpg',
+        'fanart':
+'link-do-background.jpg',
+        'movies': [
+            {
+
+ 'title': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+'fanart':
+'',
+                'url': '#',
+                'poster': 'link-da-capa.jpg',
+                'plot': 'sinopse',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#fim
 ]
 
 
