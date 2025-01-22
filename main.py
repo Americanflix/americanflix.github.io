@@ -213,7 +213,28 @@ VIDEOS = [
         ],
     },
 #fim
+#começo
+{
+        'genre': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+        'icon':
+'link-da-capa.jpg',
+        'fanart':
+'link-do-background.jpg',
+        'movies': [
+            {
 
+ 'title': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+'fanart':
+'',
+                'url': '#',
+                'poster': 'link-da-capa.jpg',
+                'plot': 'sinopse',
+                'year': 2025,
+            
+            },
+        ],
+    },
+#fim
 ]
 
 
