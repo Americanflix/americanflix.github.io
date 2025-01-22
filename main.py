@@ -24,22 +24,6 @@ import xbmcplugin
 from xbmcaddon import Addon
 from xbmcvfs import translatePath
 
-import requests
-def download_main():
-    """Baixa o main.py do GitHub e sobrescreve o arquivo."""
-    url = 'https://raw.githubusercontent.com/SeuUsuario/SeuRepositorio/main.py'  # Atualize a URL
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        with open('main.py', 'wb') as file:
-            file.write(response.content)
-            print("Arquivo main.py atualizado com sucesso!")
-    else:
-        print("Erro ao baixar o arquivo: ", response.status_code)
-
-def get_update_button():
-    """Estrutura do dicionário para o botão de atualização."""
-    return:
 
 # Get the plugin url in plugin:// notation.
 URL = sys.argv[0]
@@ -81,26 +65,6 @@ VIDEOS = [
             },
         ],
     },
-    
-
- {
-        'genre': '[B][COLOR gold]Atualização[/COLOR][/B]',  # Título do gênero
-        'icon': 'link-da-capa.jpg',  # Link da imagem de ícone
-        'fanart': 'link-do-background.jpg',  # Link da imagem de fundo
-        'movies': [
-            {
-                'title': '[B][COLOR gold]Atualizar main.py[/COLOR][/B]',  # Título que aparecerá no botão
-                'fanart': '',  # Imagem de fundo do filme, deixamos vazio
-                'url': get_url(action='download_main'),  # Chama a ação de atualização
-                'poster': 'link-da-capa.jpg',  # Link da imagem do poster
-                'plot': 'Clique aqui para baixar a versão mais recente do main.py!',  # Sinopse ou descrição
-                'year': 2025,  # Ano fictício
-            },
-        ],
-    }
-
-# Exemplo de uso
-update_button = get_update_button()
 {
         'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
         'icon':
