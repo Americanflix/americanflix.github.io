@@ -33,30 +33,11 @@ ADDON_PATH = translatePath(Addon().getAddonInfo('path'))
 ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons')
 FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
 
-def handle_action(action):
-    #Lida com a ação do botão clicado.
-    if action == 'update_main':
-        download_main()
 # instalador de pacotes do americanflix
 # Here we use a hardcoded list of movies simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some website or online service.
 VIDEOS = [
-    {
-    'genre': '[B][COLOR gold]Atualização[/COLOR][/B]',
-    'icon': 'link-da-capa.jpg',  # Link da imagem de ícone
-    'fanart': 'link-do-background.jpg',  # Link da imagem de fundo
-    'movies': [
-        {
-            'title': '[B][COLOR gold]Atualizar main.py[/COLOR][/B]',
-            'fanart': '',
-            'url': 'update_main',  # Ação reconhecida no seu código para atualizar
-            'poster': 'link-da-capa.jpg',  # Link da imagem do poster
-            'plot': 'Clique aqui para baixar a versão mais recente do main.py!',
-            'year': 2025,
-        },
-    ],
-}
     {
         'genre': '[B][COLOR blue]informações[/COLOR][/B]',
         'icon':
