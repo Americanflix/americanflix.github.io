@@ -33,6 +33,10 @@ ADDON_PATH = translatePath(Addon().getAddonInfo('path'))
 ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons')
 FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
 
+def handle_action(action):
+    #Lida com a ação do botão clicado.
+    if action == 'update_main':
+        download_main()
 # instalador de pacotes do americanflix
 # Here we use a hardcoded list of movies simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
