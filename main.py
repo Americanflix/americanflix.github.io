@@ -24,6 +24,23 @@ import xbmcplugin
 from xbmcaddon import Addon
 from xbmcvfs import translatePath
 
+import requests
+def download_main():
+    """Baixa o main.py do GitHub e sobrescreve o arquivo."""
+    url = 'https://raw.githubusercontent.com/SeuUsuario/SeuRepositorio/main.py'  # Atualize a URL
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        with open('main.py', 'wb') as file:
+            file.write(response.content)
+            print("Arquivo main.py atualizado com sucesso!")
+    else:
+        print("Erro ao baixar o arquivo: ", response.status_code)
+
+def get_update_button():
+    """Estrutura do dicionário para o botão de atualização."""
+    return:
+
 # Get the plugin url in plugin:// notation.
 URL = sys.argv[0]
 # Get a plugin handle as an integer number.
@@ -64,23 +81,9 @@ VIDEOS = [
             },
         ],
     },
-    import requests
+    
 
-def download_main():
-    """Baixa o main.py do GitHub e sobrescreve o arquivo."""
-    url = 'https://raw.githubusercontent.com/SeuUsuario/SeuRepositorio/main.py'  # Atualize a URL
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        with open('main.py', 'wb') as file:
-            file.write(response.content)
-            print("Arquivo main.py atualizado com sucesso!")
-    else:
-        print("Erro ao baixar o arquivo: ", response.status_code)
-
-def get_update_button():
-    """Estrutura do dicionário para o botão de atualização."""
-    return {
+ {
         'genre': '[B][COLOR gold]Atualização[/COLOR][/B]',  # Título do gênero
         'icon': 'link-da-capa.jpg',  # Link da imagem de ícone
         'fanart': 'link-do-background.jpg',  # Link da imagem de fundo
