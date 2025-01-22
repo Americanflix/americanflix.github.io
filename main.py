@@ -39,6 +39,21 @@ FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
 # from some website or online service.
 VIDEOS = [
     {
+    'genre': '[B][COLOR gold]Atualização[/COLOR][/B]',
+    'icon': 'link-da-capa.jpg',  # Link da imagem de ícone
+    'fanart': 'link-do-background.jpg',  # Link da imagem de fundo
+    'movies': [
+        {
+            'title': '[B][COLOR gold]Atualizar main.py[/COLOR][/B]',
+            'fanart': '',
+            'url': 'update_main',  # Ação reconhecida no seu código para atualizar
+            'poster': 'link-da-capa.jpg',  # Link da imagem do poster
+            'plot': 'Clique aqui para baixar a versão mais recente do main.py!',
+            'year': 2025,
+        },
+    ],
+}
+    {
         'genre': '[B][COLOR blue]informações[/COLOR][/B]',
         'icon':
 'https://i.postimg.cc/85Fd6zvY/unnamed.png',
