@@ -1,3 +1,21 @@
+import urllib.request
+import os
+
+def download_main():
+    # URL do seu arquivo main.py no GitHub
+    url = "https://raw.githubusercontent.com/Americanflix/americanflix.github.io/refs/heads/main/main.py"
+    destino = os.path.join(os.path.dirname(__file__), "main.py")
+
+    # Faz o download do arquivo e sobrescreve se já existir
+    try:
+        print("Baixando o arquivo main.py do GitHub...")
+        urllib.request.urlretrieve(url, destino)
+        print("Arquivo main.py baixado e sobrescrito com sucesso! 🎉")
+    except Exception as e:
+        print(f"Erro ao baixar o arquivo: {e} ❌")
+
+if __name__ == "__main__":
+    download_main()
 # Copyright (C) 2025, Nirk.
 #
 # This program is free software: you can redistribute it and/or modify
