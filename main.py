@@ -178,7 +178,7 @@ VIDEOS = [
 #fim
 #começo
 {
-        'genre': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+        'genre': '[B][COLOR gold] O Assassino do Calendário [/COLOR][/B]',
         'icon':
 'link-da-capa.jpg',
         'fanart':
@@ -186,7 +186,7 @@ VIDEOS = [
         'movies': [
             {
 
- 'title': '[B][COLOR blue] titulo do filme em amarelo[/COLOR][/B]',
+ 'title': '[B][COLOR blue] O Assassino do Calendário[/COLOR][/B]',
 'fanart':
 '',
                 'url': '#',
