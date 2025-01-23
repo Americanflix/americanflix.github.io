@@ -180,9 +180,9 @@ VIDEOS = [
 {
         'genre': '[B][COLOR gold] O Assassino do Calendário [/COLOR][/B]',
         'icon':
-'link-da-capa.jpg',
+'https://image.tmdb.org/t/p/w342/aUZutzzSNvE7IDchtBRlHPCLvjB.jpg',
         'fanart':
-'link-do-background.jpg',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_i6YdqJ-RzU1gv_RHLy64gbzjTbKypLbekw&usqp=CAU',
         'movies': [
             {
 
@@ -190,7 +190,7 @@ VIDEOS = [
 'fanart':
 '',
                 'url': '#',
-                'poster': 'link-da-capa.jpg',
+                'poster': 'https://image.tmdb.org/t/p/w342/aUZutzzSNvE7IDchtBRlHPCLvjB.jpg',
                 'plot': 'Klara vai morrer hoje, a menos que mate o marido. O Assassino do Calendário deu a ela esse ultimato. Quando Jules começa seu turno da noite em uma linha direta para mulheres que estão indo sozinhas para casa, ele atende a ligação de Klara. Ele logo se torna sua última esperança de sobrevivência e corre contra o tempo para salvá-la. Baseado no thriller e best-seller alemão de Sebastian Fitzek.',
                 'year': 2025,
             
