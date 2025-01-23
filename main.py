@@ -65,6 +65,27 @@ VIDEOS = [
             },
         ],
     },
+    {
+      # Estrutura do dicionário para o botão de atualização
+def get_update_button():
+    return {
+        'genre': '[B][COLOR gold]Atualização[/COLOR][/B]',  # Título do gênero
+        'icon': 'link-da-capa.jpg',  # Link da imagem de ícone
+        'fanart': 'link-do-background.jpg',  # Link da imagem de fundo
+        'movies': [
+            {
+                'title': '[B][COLOR gold]Atualizar main.py[/COLOR][/B]',  # Título que aparecerá no botão
+                'fanart': '',  # Imagem de fundo do filme, deixamos vazio
+                'url': get_url(action='update_main'),  # Chama a ação de atualização
+                'poster': 'link-da-capa.jpg',  # Link da imagem do poster
+                'plot': 'Clique aqui para baixar a versão mais recente do main.py!',  # Sinopse ou descrição
+                'year': 2025,  # Ano fictício
+            },
+        ],
+    }
+
+# Exemplo de uso
+update_button = get_update_button()  
 {
         'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
         'icon':
