@@ -223,7 +223,7 @@ VIDEOS = [
  'title': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
 'fanart':
 '',
-                'url': '#',
+                'url': 'url_main_py',
                 'poster': 'link-da-capa.jpg',
                 'plot': 'sinopse',
                 'year': 2025,
