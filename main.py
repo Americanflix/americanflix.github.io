@@ -39,28 +39,13 @@ FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
 # from some website or online service.
 VIDEOS = [
     {
-        'genre': '[B][COLOR blue]informações[/COLOR][/B]',
+        'genre': '[B][COLOR blue]Filmes 2025[/COLOR][/B]',
         'icon':
 'https://i.postimg.cc/85Fd6zvY/unnamed.png',
         'fanart':
 'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
-        'movies': [
+        'info': [
             {
-
- 'title': '[B][COLOR gold]==Download==[/COLOR][/B]',
-'fanart':
-'https://i.postimg.cc/jq3kGp8Z/IMG-20250120-102354-711.jpg',
-                'url': '#',
-                'poster': 'https://v2.nachtalb.io/ris/f/AgAD3EEAAqyX8Eg.png',
-                'plot': '[B][COLOR gold]Faça Download/Baixar do nossos addon oficial do[/COLOR][/B][B][COLOR blue] americanflix addon oficial[/COLOR][/B][B][COLOR gold] basta você escanear o QR code, apontando a camera do seu celular para a TV, caso você esteja usando um aparelho mobile basta você tirar print da dela, e abrir a imagem com seu leitor de QR code, e pronto!, seja feliz [/COLOR][/B]',
-                'year': 2025,
-            },
-            {
-                'title': '[B][COLOR blue]AMERICANFLIX[/COLOR][/B]',
-                'url': '#',
-                'poster': 'https://i.postimg.cc/LXjVqfHC/americanflix.jpg',
-                'plot': '[B][COLOR white]o Americanflix esta no kodi agora, venha aproveitar a nossa variedade de conteudo, abaixo você pode abaixar nosso addon logo abaixo, leia com atenção e aproveite☺️[/COLOR][/B]',
-                'year': 2025,
             },
         ],
     },
