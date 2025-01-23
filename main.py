@@ -214,6 +214,18 @@ VIDEOS = [
         ],
     },
 #fim
+   {
+        'genre': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+        'icon':
+'link-da-capa.jpg',
+        'fanart':
+'link-do-background.jpg',
+        'movies': [
+            {
+                
+            },
+        ],
+    }, 
 ]
 
 
