@@ -201,7 +201,7 @@ VIDEOS = [
         'movies': [
             {
 
- 'title': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
+ 'title': '[B][COLOR blue] titulo do filme em amarelo[/COLOR][/B]',
 'fanart':
 '',
                 'url': '#',
