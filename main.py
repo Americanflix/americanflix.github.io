@@ -191,7 +191,7 @@ VIDEOS = [
 '',
                 'url': '#',
                 'poster': 'link-da-capa.jpg',
-                'plot': 'sinopse',
+                'plot': 'Klara vai morrer hoje, a menos que mate o marido. O Assassino do Calendário deu a ela esse ultimato. Quando Jules começa seu turno da noite em uma linha direta para mulheres que estão indo sozinhas para casa, ele atende a ligação de Klara. Ele logo se torna sua última esperança de sobrevivência e corre contra o tempo para salvá-la. Baseado no thriller e best-seller alemão de Sebastian Fitzek.',
                 'year': 2025,
             
             },
