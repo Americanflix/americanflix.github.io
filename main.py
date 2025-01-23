@@ -210,28 +210,20 @@ VIDEOS = [
         ],
     },
 #fim
-#começo
 {
-        'genre': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
-        'icon':
-'link-da-capa.jpg',
-        'fanart':
-'link-do-background.jpg',
-        'movies': [
-            {
-
- 'title': '[B][COLOR gold] titulo do filme em amarelo[/COLOR][/B]',
-'fanart':
-'',
-                'url': 'url_main_py',
-                'poster': 'link-da-capa.jpg',
-                'plot': 'sinopse',
-                'year': 2025,
-            
-            },
-        ],
-    },
-#fim
+    'gênero': '[B][COLOR gold] título do filme em amarelo[/COLOR][/B]',
+    'ícone': 'link-da-capa.jpg',
+    'arte de fã': 'link-do-fundo.jpg',
+    'filmes': [
+        {
+            'title': '[B][COLOR gold] título do filme em amarelo[/COLOR][/B]',
+            'url': 'url_main_py',  # Esta URL irá chamar a função de download
+            'pôster': 'link-da-capa.jpg',
+            'enredo': 'sinopse',
+            'ano': 2025,
+        },
+    ],
+}
    
 ]
 
