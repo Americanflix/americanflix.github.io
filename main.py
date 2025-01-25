@@ -46,7 +46,9 @@ VIDEOS = [
 'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
         'movies': [
             {
-         
+},
+        ],
+    },
 {
         'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
         'icon':
@@ -464,9 +466,6 @@ VIDEOS = [
         ],
     },
 #fim
-   },
-        ],
-    },
 ]
 
 
