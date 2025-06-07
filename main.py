@@ -1,55 +1,32 @@
-# Copyright (C) 2025, Nirk.
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-"""
-Example video plugin that is compatible with Kodi 20.x "Nexus" and above
-"""
-import os
-import sys
-from urllib.parse import urlencode, parse_qsl
-
-import xbmcgui
-import xbmcplugin
-from xbmcaddon import Addon
-from xbmcvfs import translatePath
-
-# Get the plugin url in plugin:// notation.
-URL = sys.argv[0]
-# Get a plugin handle as an integer number.
-HANDLE = int(sys.argv[1])
-# Get addon base path
-ADDON_PATH = translatePath(Addon().getAddonInfo('path'))
-ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons')
-FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
-
-# instalador de pacotes do americanflix
-# Here we use a hardcoded list of movies simply for demonstrating purposes
-# In a "real life" plugin you will need to get info and links to video files/streams
-# from some website or online service.
+#Copyright (C) 2025, Nirk. # 
+# This program is free software: you can redistribute it and/or modify 
+# it under the terms of the GNU General Public License as published by 
+# the Free Software Foundation, either version 3 of the License, or 
+# (at your option) any later version. # 
+# This program is distributed in the hope that it will be useful, 
+# but WITHOUT ANY WARRANTY; without even the implied warranty of 
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+# GNU General Public License for more details. # # You should have received a copy of the GNU General Public License 
+# along with this program.  If not, see https://www.gnu.org/licenses/. """ Example video plugin that is compatible with Kodi 20.x "Nexus" and above """ import os import sys from urllib.parse import urlencode, parse_qsl  import xbmcgui import xbmcplugin from xbmcaddon import Addon from xbmcvfs import translatePath  
+# Get the plugin url in plugin:// notation. URL = sys.argv[0] 
+# Get a plugin handle as an integer number. HANDLE = int(sys.argv[1]) 
+# Get addon base path ADDON_PATH = translatePath(Addon().getAddonInfo('path')) ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons') FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')  
+# instalador de pacotes do americanflix 
+# Here we use a hardcoded list of movies simply for demonstrating purposes 
+# In a "real life" plugin you will need to get info and links to video files/streams 
+# from some website or online service. 
 VIDEOS = [
     {
-        'genre': '[B][COLOR purple]==filmes 2025==[/COLOR][/B]',
-        'icon':
-'https://i.postimg.cc/85Fd6zvY/unnamed.png',
-        'fanart':
-'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
-       'plot': 'Em O Truque do Amor, dois irmãos, Vito (Antonio Folletto) e Antonello (Vincenzo Nemolato), enfrentam uma crise financeira que ameaça arrancar eles da linda e amada casa onde vivem em Nápoles. Desesperados, eles criam um plano audacioso: enganar Marina (Laura Adriani), uma rica herdeira solitária, fingindo ser fundadores de uma instituição de caridade. Vito, um pai solteiro que já superou muitos desafios, assume o papel principal na farsa. No entanto, à medida que ele se aproxima de Marina, descobre sua profunda infelicidade e solidão. O coração de Vito começa a vacilar, e o engano se transforma em uma autêntica história de amor. Enquanto Vito e Marina se aproximam, Antonello se torna cada vez mais ansioso para receber o dinheiro. A pressão aumenta, e Vito precisa escolher entre salvar sua família ou seguir seu coração.',
-                'year': 2025,
-        'movies': [
+        'genre': '[B][COLOR purple]==filmes 2025==[/COLOR][/B]',         
+        'icon': 'https://i.postimg.cc/85Fd6zvY/unnamed.png',         
+        'fanart': 'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',         
+        'movies': [             
             {
-},
-{
+                
+            },         
+        ],     
+    }, 
+    {
         'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
         'icon':
 'https://image.tmdb.org/t/p/w342/gi6xUdJgh2OyF4yM7YAGGwKgKYS.jpg',
