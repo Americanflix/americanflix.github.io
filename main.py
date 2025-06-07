@@ -1,31 +1,54 @@
-#Copyright (C) 2025, Nirk. # 
-# This program is free software: you can redistribute it and/or modify 
-# it under the terms of the GNU General Public License as published by 
-# the Free Software Foundation, either version 3 of the License, or 
-# (at your option) any later version. # 
-# This program is distributed in the hope that it will be useful, 
-# but WITHOUT ANY WARRANTY; without even the implied warranty of 
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-# GNU General Public License for more details. # # You should have received a copy of the GNU General Public License 
-# along with this program.  If not, see https://www.gnu.org/licenses/. """ Example video plugin that is compatible with Kodi 20.x "Nexus" and above """ import os import sys from urllib.parse import urlencode, parse_qsl  import xbmcgui import xbmcplugin from xbmcaddon import Addon from xbmcvfs import translatePath  
-# Get the plugin url in plugin:// notation. URL = sys.argv[0] 
-# Get a plugin handle as an integer number. HANDLE = int(sys.argv[1]) 
-# Get addon base path ADDON_PATH = translatePath(Addon().getAddonInfo('path')) ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons') FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')  
-# instalador de pacotes do americanflix 
-# Here we use a hardcoded list of movies simply for demonstrating purposes 
-# In a "real life" plugin you will need to get info and links to video files/streams 
-# from some website or online service. 
+# Copyright (C) 2025, Nirk.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+Example video plugin that is compatible with Kodi 20.x "Nexus" and above
+"""
+import os
+import sys
+from urllib.parse import urlencode, parse_qsl
+
+import xbmcgui
+import xbmcplugin
+from xbmcaddon import Addon
+from xbmcvfs import translatePath
+
+# Get the plugin url in plugin:// notation.
+URL = sys.argv[0]
+# Get a plugin handle as an integer number.
+HANDLE = int(sys.argv[1])
+# Get addon base path
+ADDON_PATH = translatePath(Addon().getAddonInfo('path'))
+ICONS_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'icons')
+FANART_DIR = os.path.join(ADDON_PATH, 'resources', 'images', 'fanart')
+
+# instalador de pacotes do americanflix
+# Here we use a hardcoded list of movies simply for demonstrating purposes
+# In a "real life" plugin you will need to get info and links to video files/streams
+# from some website or online service.
 VIDEOS = [
     {
-        'genre': '[B][COLOR purple]==filmes 2025==[/COLOR][/B]',         
-        'icon': 'https://i.postimg.cc/85Fd6zvY/unnamed.png',         
-        'fanart': 'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',         
-        'movies': [             
+        'genre': '[B][COLOR purple]==filmes 2025==[/COLOR][/B]',
+        'icon':
+'https://i.postimg.cc/85Fd6zvY/unnamed.png',
+        'fanart':
+'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
+        'movies': [
             {
-                
-            },         
-        ],     
-    }, 
+            },
+        ],
+    },
     {
         'genre': '[B][COLOR gold]O Truque do Amor[/COLOR][/B]',
         'icon':
