@@ -30,7 +30,7 @@ def resolver_mixdrop(url):
     headers = {'User-Agent':'Mozilla/5.0', 'Referer':url}
     resp = requests.get(url, headers=headers, timeout=10)
     html = resp.text
-    match = re.search(r'sources\s*:\s*
+    match = re.search(r'sources\s*:\s*') 
 
 # Get the plugin url in plugin:// notation.
 URL = sys.argv[0]
