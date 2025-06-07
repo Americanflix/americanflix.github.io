@@ -44,6 +44,8 @@ VIDEOS = [
 'https://i.postimg.cc/85Fd6zvY/unnamed.png',
         'fanart':
 'https://i.postimg.cc/bN9FVXfC/Americanflix.jpg',
+       'plot': 'Em O Truque do Amor, dois irmãos, Vito (Antonio Folletto) e Antonello (Vincenzo Nemolato), enfrentam uma crise financeira que ameaça arrancar eles da linda e amada casa onde vivem em Nápoles. Desesperados, eles criam um plano audacioso: enganar Marina (Laura Adriani), uma rica herdeira solitária, fingindo ser fundadores de uma instituição de caridade. Vito, um pai solteiro que já superou muitos desafios, assume o papel principal na farsa. No entanto, à medida que ele se aproxima de Marina, descobre sua profunda infelicidade e solidão. O coração de Vito começa a vacilar, e o engano se transforma em uma autêntica história de amor. Enquanto Vito e Marina se aproximam, Antonello se torna cada vez mais ansioso para receber o dinheiro. A pressão aumenta, e Vito precisa escolher entre salvar sua família ou seguir seu coração.',
+                'year': 2025,
         'movies': [
             {
             },
