@@ -24,6 +24,8 @@ import xbmcplugin
 from xbmcaddon import Addon
 from xbmcvfs import translatePath
 
+
+
 # Get the plugin url in plugin:// notation.
 URL = sys.argv[0]
 # Get a plugin handle as an integer number.
@@ -649,15 +651,3 @@ if __name__ == '__main__':
     # We use string slicing to trim the leading '?' from the plugin call paramstring
     router(sys.argv[2][1:])
 
-import re
-import requests
-
-def resolver_mixdrop(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0',
-        'Referer': url
-    }
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        html = response.text
-        match = re.search(r'sources\s*:\s*
